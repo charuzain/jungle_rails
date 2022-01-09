@@ -1,12 +1,46 @@
 <section class="orders-show">
 
+  
+    <div class="order-summary jumbotron">
+    <h4>Thank you for your order! Order id has been sent to <%= @order.email %></h4>
+  </div>
   <header class="page-header">
-    <h1>Order #<%= @order.id %></h1>
+    <h3>Details for order <%= @order.id %></h3>
   </header>
 
-  <div class="order-summary jumbotron">
-    <h4>Thank you for your order!</h4>
+    <div class="panel panel-default items">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th colspan="2">Product</th>
+          <th>Unit Price</th>
+          <th>Quantity</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+      
+        <% @order.line_items.each do |item| %>
+            <%= render 'item', item: item %>
+        <% end %>
+      </tbody>
+
+
+
+      <tfoot>
+        <tr>
+          <th colspan="4">
+            TOTAL:
+          </th>
+          <th>
+            <%= humanized_money_with_symbol cart_subtotal_cents / 100.0 %>
+          </th>
+        </tr>
+      </tfoot>
+    </table>
   </div>
+
+
 
 
   
