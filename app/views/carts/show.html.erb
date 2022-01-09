@@ -1,9 +1,17 @@
+<% if enhanced_cart.size == 0%>
+
+<div class="alert alert-primary" role="alert"> 
+<div> Your Cart is Empty</div>
+<a href="/" class="alert-link">Continue Shopping</a>
+</div>
+
+<% else %>
 <section class="cart-show">
 
   <header class="page-header">
     <h1>My Cart</h1>
   </header>
-
+    
   <div class="panel panel-default items">
     <table class="table table-bordered">
       <thead>
@@ -50,3 +58,4 @@
   </div>
 
 </section>
+<% end %>
