@@ -1,8 +1,10 @@
 <% if enhanced_cart.size == 0%>
 
-<div class="alert alert-primary" role="alert"> 
-<div> Your Cart is Empty</div>
-<a href="/" class="alert-link">Continue Shopping</a>
+ 
+<div class="order-summary jumbotron"> 
+<h3> Your Cart is Empty</h3> </br>
+
+  <%= link_to "Continue Shopping", root_path, class: 'btn btn-lg btn-primary' %>
 </div>
 
 <% else %>
