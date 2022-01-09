@@ -1,2 +1,23 @@
-<h1>Admin::Dashboard#show</h1>
-<p>Find me in app/views/admin/dashboard/show.html.erb</p>
+<section class="admin-dashboard-show">
+
+  <header class="page-header">
+    <h1>Dashboard</h1>
+  </header>
+
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="jumbotron">
+        <h2>Total Products</h2>
+        <p><%= @products_count %></p>
+        <p><a class="btn btn-lg btn-success" href="admin/products#index" role="button">Go to Products</a></p>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="jumbotron">
+        <h2>Total Categories</h2>
+        <p><%= @categories_count %></p>
+        <p><a class="btn btn-lg btn-success" href="#" role="button">Go to Categories</a></p>
+      </div>
+    </div>
+  </div>
+  </section>
