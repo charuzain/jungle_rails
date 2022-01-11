@@ -4,7 +4,7 @@ A mini e-commerce application built with Rails 4.2
 
 ## Final Product
 
-!["screenshot of Home Page"](https://github.com/charuzain/jungle_rails/blob/master/docs/signup_page.png?raw=true)
+!["screenshot of Home Page"](https://github.com/charuzain/jungle_rails/blob/master/docs/home.png?raw=true)
 
 !["screenshot of cart"](https://github.com/charuzain/jungle_rails/blob/master/docs/cart.png?raw=true)
 
